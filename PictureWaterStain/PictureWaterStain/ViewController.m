@@ -22,6 +22,12 @@
     //取得图片上下文
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
     
+    //设置圆形剪裁区域
+    //创建圆形路径
+    UIBezierPath* path=[UIBezierPath bezierPathWithOvalInRect:imageView.bounds];
+    //把路径设置为剪裁区域
+    [path addClip];
+    
     //绘制图片
     [image drawInRect:imageView.bounds];
     
@@ -29,9 +35,7 @@
     NSString* str=@"@jiangsu";
     
     //绘制字符串到当前上下文
-    [str drawAtPoint:CGPointMake(image.size.width-60, image.size.height-30) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]}];
-    
-    
+    [str drawAtPoint:CGPointMake(image.size.width/2, image.size.height/2) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]}];
     
     //取得当前上下文中的图片
     UIImage* imagex=UIGraphicsGetImageFromCurrentImageContext();
