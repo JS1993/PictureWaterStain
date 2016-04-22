@@ -18,6 +18,53 @@
     [super viewDidLoad];
     UIImage* image=[UIImage imageNamed:@"IMG_2388 2"];
     
+    CGFloat imageWH=MIN(image.size.width, image.size.height);
+    //创建一个较大图形上下文
+    CGFloat border=2;
+    CGFloat ovalWH=imageWH+2*border;
+    
+    //开启图形上下文
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(ovalWH, ovalWH), NO, 0.0);
+    //绘制较大圆的路径
+    UIBezierPath* ovalPath=[UIBezierPath bezierPathWithOvalInRect:CGRectMake(0,0, ovalWH, ovalWH)];
+    //填充红色
+    [[UIColor redColor] set];
+    [ovalPath fill];
+    
+    //设置圆形剪裁区域
+    //创建圆形路径
+    UIBezierPath* path=[UIBezierPath bezierPathWithOvalInRect:CGRectMake(border,border, imageWH, imageWH)];
+    //把路径设置为剪裁区域
+    [path addClip];
+    
+    //绘制图片
+    [image drawAtPoint:CGPointMake(border, border)];
+    
+    //绘制字符串水印
+    NSString* str=@"@jiangsu";
+    
+    //绘制字符串到当前上下文
+    [str drawAtPoint:CGPointMake(image.size.width/2, image.size.height/2) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]}];
+    
+    //取得当前上下文中的图片
+    UIImage* imagex=UIGraphicsGetImageFromCurrentImageContext();
+    
+    //关闭上下文
+    UIGraphicsEndPDFContext();
+    
+    //创建显示图片的view
+    UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectMake(border, border, imageWH,imageWH)];
+    
+    imageView.image=imagex;
+    
+    [self.view addSubview:imageView];
+    
+}
+
+-(void)setImage{
+    
+    UIImage* image=[UIImage imageNamed:@"IMG_2388 2"];
+    
     UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 50, image.size.width, image.size.height)];
     //取得图片上下文
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
@@ -46,8 +93,6 @@
     
     //关闭上下文
     UIGraphicsEndPDFContext();
-    
 }
-
 
 @end
