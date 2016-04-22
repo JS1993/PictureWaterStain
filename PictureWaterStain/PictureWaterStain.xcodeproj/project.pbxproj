@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFB03C091CCA467500F3DC9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C081CCA467500F3DC9B /* main.m */; };
+		CFB03C0C1CCA467500F3DC9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C0B1CCA467500F3DC9B /* AppDelegate.m */; };
+		CFB03C0F1CCA467500F3DC9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C0E1CCA467500F3DC9B /* ViewController.m */; };
+		CFB03C121CCA467500F3DC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB03C101CCA467500F3DC9B /* Main.storyboard */; };
+		CFB03C151CCA467500F3DC9B /* PictureWaterStain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C131CCA467500F3DC9B /* PictureWaterStain.xcdatamodeld */; };
+		CFB03C171CCA467500F3DC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB03C161CCA467500F3DC9B /* Assets.xcassets */; };
+		CFB03C1A1CCA467500F3DC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB03C181CCA467500F3DC9B /* LaunchScreen.storyboard */; };
+		CFB03C251CCA467500F3DC9B /* PictureWaterStainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C241CCA467500F3DC9B /* PictureWaterStainTests.m */; };
+		CFB03C301CCA467500F3DC9B /* PictureWaterStainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB03C2F1CCA467500F3DC9B /* PictureWaterStainUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFB03C211CCA467500F3DC9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB03BFC1CCA467500F3DC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB03C031CCA467500F3DC9B;
+			remoteInfo = PictureWaterStain;
+		};
+		CFB03C2C1CCA467500F3DC9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB03BFC1CCA467500F3DC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB03C031CCA467500F3DC9B;
+			remoteInfo = PictureWaterStain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFB03C041CCA467500F3DC9B /* PictureWaterStain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureWaterStain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB03C081CCA467500F3DC9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFB03C0A1CCA467500F3DC9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFB03C0B1CCA467500F3DC9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFB03C0D1CCA467500F3DC9B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFB03C0E1CCA467500F3DC9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFB03C111CCA467500F3DC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFB03C141CCA467500F3DC9B /* PictureWaterStain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PictureWaterStain.xcdatamodel; sourceTree = "<group>"; };
+		CFB03C161CCA467500F3DC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFB03C191CCA467500F3DC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFB03C1B1CCA467500F3DC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB03C201CCA467500F3DC9B /* PictureWaterStainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureWaterStainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB03C241CCA467500F3DC9B /* PictureWaterStainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureWaterStainTests.m; sourceTree = "<group>"; };
+		CFB03C261CCA467500F3DC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB03C2B1CCA467500F3DC9B /* PictureWaterStainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureWaterStainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB03C2F1CCA467500F3DC9B /* PictureWaterStainUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureWaterStainUITests.m; sourceTree = "<group>"; };
+		CFB03C311CCA467500F3DC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFB03C011CCA467500F3DC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C1D1CCA467500F3DC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C281CCA467500F3DC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFB03BFB1CCA467500F3DC9B = {
+			isa = PBXGroup;
+			children = (
+				CFB03C061CCA467500F3DC9B /* PictureWaterStain */,
+				CFB03C231CCA467500F3DC9B /* PictureWaterStainTests */,
+				CFB03C2E1CCA467500F3DC9B /* PictureWaterStainUITests */,
+				CFB03C051CCA467500F3DC9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFB03C051CCA467500F3DC9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB03C041CCA467500F3DC9B /* PictureWaterStain.app */,
+				CFB03C201CCA467500F3DC9B /* PictureWaterStainTests.xctest */,
+				CFB03C2B1CCA467500F3DC9B /* PictureWaterStainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB03C061CCA467500F3DC9B /* PictureWaterStain */ = {
+			isa = PBXGroup;
+			children = (
+				CFB03C0A1CCA467500F3DC9B /* AppDelegate.h */,
+				CFB03C0B1CCA467500F3DC9B /* AppDelegate.m */,
+				CFB03C0D1CCA467500F3DC9B /* ViewController.h */,
+				CFB03C0E1CCA467500F3DC9B /* ViewController.m */,
+				CFB03C101CCA467500F3DC9B /* Main.storyboard */,
+				CFB03C161CCA467500F3DC9B /* Assets.xcassets */,
+				CFB03C181CCA467500F3DC9B /* LaunchScreen.storyboard */,
+				CFB03C1B1CCA467500F3DC9B /* Info.plist */,
+				CFB03C131CCA467500F3DC9B /* PictureWaterStain.xcdatamodeld */,
+				CFB03C071CCA467500F3DC9B /* Supporting Files */,
+			);
+			path = PictureWaterStain;
+			sourceTree = "<group>";
+		};
+		CFB03C071CCA467500F3DC9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB03C081CCA467500F3DC9B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB03C231CCA467500F3DC9B /* PictureWaterStainTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB03C241CCA467500F3DC9B /* PictureWaterStainTests.m */,
+				CFB03C261CCA467500F3DC9B /* Info.plist */,
+			);
+			path = PictureWaterStainTests;
+			sourceTree = "<group>";
+		};
+		CFB03C2E1CCA467500F3DC9B /* PictureWaterStainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB03C2F1CCA467500F3DC9B /* PictureWaterStainUITests.m */,
+				CFB03C311CCA467500F3DC9B /* Info.plist */,
+			);
+			path = PictureWaterStainUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFB03C031CCA467500F3DC9B /* PictureWaterStain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB03C341CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStain" */;
+			buildPhases = (
+				CFB03C001CCA467500F3DC9B /* Sources */,
+				CFB03C011CCA467500F3DC9B /* Frameworks */,
+				CFB03C021CCA467500F3DC9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PictureWaterStain;
+			productName = PictureWaterStain;
+			productReference = CFB03C041CCA467500F3DC9B /* PictureWaterStain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB03C1F1CCA467500F3DC9B /* PictureWaterStainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB03C371CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStainTests" */;
+			buildPhases = (
+				CFB03C1C1CCA467500F3DC9B /* Sources */,
+				CFB03C1D1CCA467500F3DC9B /* Frameworks */,
+				CFB03C1E1CCA467500F3DC9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB03C221CCA467500F3DC9B /* PBXTargetDependency */,
+			);
+			name = PictureWaterStainTests;
+			productName = PictureWaterStainTests;
+			productReference = CFB03C201CCA467500F3DC9B /* PictureWaterStainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFB03C2A1CCA467500F3DC9B /* PictureWaterStainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB03C3A1CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStainUITests" */;
+			buildPhases = (
+				CFB03C271CCA467500F3DC9B /* Sources */,
+				CFB03C281CCA467500F3DC9B /* Frameworks */,
+				CFB03C291CCA467500F3DC9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB03C2D1CCA467500F3DC9B /* PBXTargetDependency */,
+			);
+			name = PictureWaterStainUITests;
+			productName = PictureWaterStainUITests;
+			productReference = CFB03C2B1CCA467500F3DC9B /* PictureWaterStainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB03BFC1CCA467500F3DC9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jiangsu;
+				TargetAttributes = {
+					CFB03C031CCA467500F3DC9B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+					};
+					CFB03C1F1CCA467500F3DC9B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CFB03C031CCA467500F3DC9B;
+					};
+					CFB03C2A1CCA467500F3DC9B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CFB03C031CCA467500F3DC9B;
+					};
+				};
+			};
+			buildConfigurationList = CFB03BFF1CCA467500F3DC9B /* Build configuration list for PBXProject "PictureWaterStain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFB03BFB1CCA467500F3DC9B;
+			productRefGroup = CFB03C051CCA467500F3DC9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFB03C031CCA467500F3DC9B /* PictureWaterStain */,
+				CFB03C1F1CCA467500F3DC9B /* PictureWaterStainTests */,
+				CFB03C2A1CCA467500F3DC9B /* PictureWaterStainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB03C021CCA467500F3DC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB03C1A1CCA467500F3DC9B /* LaunchScreen.storyboard in Resources */,
+				CFB03C171CCA467500F3DC9B /* Assets.xcassets in Resources */,
+				CFB03C121CCA467500F3DC9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C1E1CCA467500F3DC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C291CCA467500F3DC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFB03C001CCA467500F3DC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB03C151CCA467500F3DC9B /* PictureWaterStain.xcdatamodeld in Sources */,
+				CFB03C0F1CCA467500F3DC9B /* ViewController.m in Sources */,
+				CFB03C0C1CCA467500F3DC9B /* AppDelegate.m in Sources */,
+				CFB03C091CCA467500F3DC9B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C1C1CCA467500F3DC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB03C251CCA467500F3DC9B /* PictureWaterStainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB03C271CCA467500F3DC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB03C301CCA467500F3DC9B /* PictureWaterStainUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFB03C221CCA467500F3DC9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB03C031CCA467500F3DC9B /* PictureWaterStain */;
+			targetProxy = CFB03C211CCA467500F3DC9B /* PBXContainerItemProxy */;
+		};
+		CFB03C2D1CCA467500F3DC9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB03C031CCA467500F3DC9B /* PictureWaterStain */;
+			targetProxy = CFB03C2C1CCA467500F3DC9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFB03C101CCA467500F3DC9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB03C111CCA467500F3DC9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFB03C181CCA467500F3DC9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB03C191CCA467500F3DC9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFB03C321CCA467500F3DC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFB03C331CCA467500F3DC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFB03C351CCA467500F3DC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PictureWaterStain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFB03C361CCA467500F3DC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PictureWaterStain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFB03C381CCA467500F3DC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PictureWaterStainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureWaterStain.app/PictureWaterStain";
+			};
+			name = Debug;
+		};
+		CFB03C391CCA467500F3DC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PictureWaterStainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureWaterStain.app/PictureWaterStain";
+			};
+			name = Release;
+		};
+		CFB03C3B1CCA467500F3DC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PictureWaterStainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PictureWaterStain;
+			};
+			name = Debug;
+		};
+		CFB03C3C1CCA467500F3DC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PictureWaterStainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PictureWaterStainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PictureWaterStain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFB03BFF1CCA467500F3DC9B /* Build configuration list for PBXProject "PictureWaterStain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB03C321CCA467500F3DC9B /* Debug */,
+				CFB03C331CCA467500F3DC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB03C341CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB03C351CCA467500F3DC9B /* Debug */,
+				CFB03C361CCA467500F3DC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFB03C371CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB03C381CCA467500F3DC9B /* Debug */,
+				CFB03C391CCA467500F3DC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFB03C3A1CCA467500F3DC9B /* Build configuration list for PBXNativeTarget "PictureWaterStainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB03C3B1CCA467500F3DC9B /* Debug */,
+				CFB03C3C1CCA467500F3DC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFB03C131CCA467500F3DC9B /* PictureWaterStain.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFB03C141CCA467500F3DC9B /* PictureWaterStain.xcdatamodel */,
+			);
+			currentVersion = CFB03C141CCA467500F3DC9B /* PictureWaterStain.xcdatamodel */;
+			path = PictureWaterStain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFB03BFC1CCA467500F3DC9B /* Project object */;
+}
