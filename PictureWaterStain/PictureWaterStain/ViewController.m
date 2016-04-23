@@ -10,9 +10,31 @@
 
 @interface ViewController ()
 
+@property(nonatomic,assign)CGPoint startP;
+@property(nonatomic,strong)UIView* shoutView;
+@property(nonatomic,strong)UIImageView* imageView;
+
 @end
 
 @implementation ViewController
+
+-(UIImageView *)imageView{
+    if (_imageView==nil) {
+        _imageView=[[UIImageView alloc]init];
+        [self.view addSubview:_imageView];
+    }
+    return _imageView;
+}
+
+-(UIView *)shoutView{
+    if (_shoutView==nil) {
+        _shoutView=[[UIView alloc]init];
+        _shoutView.backgroundColor=[UIColor blackColor];
+        _shoutView.alpha=0.6;
+        [self.view addSubview:_shoutView];
+    }
+    return _shoutView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,10 +42,53 @@
     //创建一个带有圆环的头像
     [self setImage2];
     //截屏保存
-    [self screenshout];
+//    [self screenshout];
     
+    UIPanGestureRecognizer* pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
     
+    [self.view addGestureRecognizer:pan];
 }
+
+//屏幕取区域截图
+-(void)tap:(UIPanGestureRecognizer*)pan{
+    
+    if (pan.state==UIGestureRecognizerStateBegan) {
+        
+        //记录起始点
+        self.startP=[pan locationInView:self.view];
+        
+    }else if (pan.state==UIGestureRecognizerStateChanged){
+        
+        CGPoint currentP=[pan locationInView:self.view];
+        
+        self.shoutView.frame=CGRectMake(_startP.x, _startP.y, currentP.x-_startP.x, currentP.y-_startP.y);
+        
+    }else if (pan.state==UIGestureRecognizerStateEnded){
+        
+        //开启上下文
+        UIGraphicsBeginImageContextWithOptions(self.imageView.bounds.size, NO, 0.0);
+        
+        //设置剪裁区域
+        UIBezierPath* path=[UIBezierPath bezierPathWithRect:self.shoutView.frame];
+        [path addClip];
+        //获取上下文
+        CGContextRef ctx=UIGraphicsGetCurrentContext();
+        
+        //把控件上的内容渲染到上下文
+        [self.imageView.layer renderInContext:ctx];
+        
+        //生成一张图片
+        self.imageView.image=UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        //先把剪裁的视图移除
+        [self.shoutView removeFromSuperview];
+        //在将view设置为Nil
+        self.shoutView=nil;
+        
+    }
+}
+
 
 //截屏功能
 -(void)screenshout{
@@ -42,6 +107,7 @@
     //关闭位图上下文
     UIGraphicsEndImageContext();
 }
+
 //圆形裁剪后有圆环
 -(void)setImage2{
     
@@ -82,11 +148,10 @@
     UIGraphicsEndImageContext();
     
     //创建显示图片的view
-    UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 50, imageWH,imageWH)];
+    _imageView=[[UIImageView alloc]initWithFrame:self.view.bounds];
+    _imageView.image=imagex;
     
-    imageView.image=imagex;
-    
-    [self.view addSubview:imageView];
+    [self.view addSubview:_imageView];
 }
 //圆形裁剪
 -(void)setImage{
