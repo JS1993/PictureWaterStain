@@ -16,6 +16,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //创建一个带有圆环的头像
+    [self setImage2];
+    //截屏保存
+    [self screenshout];
+    
+    
+}
+
+//截屏功能
+-(void)screenshout{
+    //创建位图上下文
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0.0);
+    //取得当前上下文
+    CGContextRef ctx=UIGraphicsGetCurrentContext();
+    //渲染当前屏幕的图层到上下本，注意：不能绘制，只能渲染
+    [self.view.layer renderInContext:ctx];
+    //获得当前上下文中渲染的图片
+    UIImage* image=UIGraphicsGetImageFromCurrentImageContext();
+    //创建一个data类型接收图片，格式为png也可以设置成Jpg并且jpg可以设置压缩质量0~1
+    NSData* data= UIImagePNGRepresentation(image);
+    //写入文件
+    [data writeToFile:@"/Users/jiangsu/Desktop/截屏.png" atomically:YES];
+    //关闭位图上下文
+    UIGraphicsEndImageContext();
+}
+//圆形裁剪后有圆环
+-(void)setImage2{
+    
     UIImage* image=[UIImage imageNamed:@"IMG_2388 2"];
     
     CGFloat imageWH=MIN(image.size.width, image.size.height);
@@ -50,17 +79,16 @@
     UIImage* imagex=UIGraphicsGetImageFromCurrentImageContext();
     
     //关闭上下文
-    UIGraphicsEndPDFContext();
+    UIGraphicsEndImageContext();
     
     //创建显示图片的view
-    UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectMake(border, border, imageWH,imageWH)];
+    UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 50, imageWH,imageWH)];
     
     imageView.image=imagex;
     
     [self.view addSubview:imageView];
-    
 }
-
+//圆形裁剪
 -(void)setImage{
     
     UIImage* image=[UIImage imageNamed:@"IMG_2388 2"];
@@ -92,7 +120,7 @@
     [self.view addSubview:imageView];
     
     //关闭上下文
-    UIGraphicsEndPDFContext();
+    UIGraphicsEndImageContext();
 }
 
 @end
